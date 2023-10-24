@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav content aside" 
+                "footer footer footer";
+            grid-template-rows: 350px 1.7fr 250px; /* Adjusted heights */
+            grid-template-columns: 1fr 3fr 1fr;
+            min-height: 200vh; /* Increased height */
+            margin: 0;
+            gap: 10px; /* Added margin between boxes */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('coins.jpg'); /* Add your image URL here */
+        }
+        .header, .footer, .nav, .aside, .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 15px; /* Rounded corners */
+            border: 7px solid #054001; /* Added borders */
+        }
+        .header {
+            grid-area: header;
+            background: #004d00; /* Darker Green */
+            justify-content: flex-start; /* Align items to the left */
+        }
+        .nav {
+            grid-area: nav;
+            background: rgba(0,128,0,0.5); /* Half opaque Green */
+        }
+        .main {
+            grid-area: content;
+            background: #022400; /* Light Green */
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .par {
+            margin: 30px;
+            font-size: 150%;
+        }
+        .aside {
+            grid-area: aside;
+            background: rgba(0,128,0,0.5); /* Half opaque Green */
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .footer {
+            grid-area: footer;
+            background: #004d00; /* Darker Green */
+        }
+        .head1 {
+            display: flex;
+            height: 100%;
+            width: 50%;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .head2 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .logo {
+            height: 50%;
+            width: 20%;
+        }
+        .sloga {
+            font-size: 250%;
+        }
+        .aa {
+            margin-left: 5%;
+            color: white;
+            text-decoration: none;
+            font-size: 200%;
+        }
+        .aa:hover{
+            font-size: 240%;
+            color: #6fff66;
+            transition: 0.4s;
+        }
+        .imgag {
+            height: 20%;
+            width: 70%;
+            border-radius: 4%;
+            border: solid 5px black;
+            margin-top: 5px;
+        }
+        .coines {
+            height: 15%;
+            width: 18%;
+            border-radius: 2%;
+            border: solid 5px darkgreen;
+        }
+        .sidep {
+            margin: 30px;
+        }
+        .contactes {
+            margin: 20px;
+        }
+        .cont {
+            font-size: 130%;
+            font-style: bold;
+        }
+        .foot1 {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+        }
+        .foot {
+            height: 100%;
+            width: 50%;
+        }
+        .rights {
+            margin: 60px;
+            font-size: 200%;
+        }
+        /* Media queries for responsiveness */
+        @media (max-width: 600px) {
+          body {
+            grid-template-areas:
+              "nav"
+              "header"
+              "content"
+              "aside"
+              "footer";
+            grid-template-columns: 1fr;
+          }
+        }
+
+
+        /* Style for the navigation links in the header */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="head1">
+                <a href="#link1" class="aa aa1" id="ling1">Верх сторінки</a>
+                <a href="#coin" class="aa aa2">Мої багатства</a>
+                <a href="#para3" class="aa aa3">Для чого цей сайт</a>
+                <a href="#footid" class="aa aa4">Контакти</a>
+        </div>
+        <div class="head2">
+            <img src="kinglogo.jfif" class="logo">
+            <p class="sloga">Офіційний сайт короля гоблінів</p>
+        </div>
+    </div>
+    <div class="nav">
+        <p class="sidep">Я б зробив декілька сторінок для різних речей, але в завданні потрібна лише одна</p>
+    </div>
+    <div class="main">
+        <p class="par par1">Я, Гоблін Король, вітаю вас на цьому унікальному веб-сайті, де ви зможете дізнатися більше про мою величність та вплив на фантастичний світ. Вам пощастить, що ви потрапили до моєї царства, адже я, Гоблін Король, відомий своєю величчю, владою та мудрістю, які безсумнівно зробили мене наймогутнішим з усіх гоблінів.</p>
+        <p class="par par2" id="coin">Не можна не зазначити, що, крім моєї неймовірної мудрості та могутності, я також володію безмежним багатством у світі монет та скарбів. Моя скарбниця наповнена золотом, сріблом та дорогоцінними каменями, які блищать на величність моєї королівської імперії. Монети моєї влади вже давно стали легендарними в усьому світі фантастики, і вони є символом багатства, який надає владу і вплив усім, хто має щастя отримати їх у свої руки. Цей безмежний скарб є частиною мого спадку, і я віддам його тим, хто заслуживший мою покровительську увагу. Відчуйте сили і багатство, які походять від Гоблін Короля, і дозвольте собі насолоджуватися цим вражаючим розмаїттям скарбів.</p>
+        <img src="coines.jfif" class="coines">
+        <p class="par par3" id="para3">Цей веб-сайт призначений для того, щоб ви могли дізнатися більше про моє величчя, мої досягнення та вплив на світ, а також для того, щоб ви мали можливість славити мене, Гоблін Короля, у всій моїй величі та прагненні до влади. Завітайте частіше, щоб дізнатися більше про мене та мої подвиги, і можливо, я виявлю вам свою благосклонність та мудрість.</p>
+    </div>
+    <div class="aside">
+        <img src="reklama.png" class="imgag">
+    </div>
+    <div class="footer">
+        <div class="foot foot1">
+            <ul class="contactes">
+                <li class="cont" id="footid">Контакти:</li>
+                <li>Адреса: Велика Гоблінія, Гоблінське Королівство</li>
+                <li>Електронна пошта: king@goblinco.com</li>
+                <li>Телефон: +123-456-7890</li>
+            </ul>
+        </div>
+        <div class="foot foot2">
+            <p class="rights"><strong>GoblinKingCo.</strong> - Усі права не захищені. Ви можете вільно користуватися і поширювати інформацію з цього сайту, оскільки це моє благословення.</p>
+        </div>
+    </div>
+</body>
+</html>
